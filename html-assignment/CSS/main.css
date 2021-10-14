@@ -2,7 +2,7 @@ body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 18px;
 }
-header, footer {
+header h1, footer {
     background-color: grey;
 }
 .site-title {
