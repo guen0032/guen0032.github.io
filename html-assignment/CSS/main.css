@@ -28,4 +28,9 @@ a:hover {
    background-color: cornflowerblue;
    border: black 3px solid;
 }
+a:focus {
+    color: white;
+    background-color: black;
+    border: yellow 3px solid;
+}
 
