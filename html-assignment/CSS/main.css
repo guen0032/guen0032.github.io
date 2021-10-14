@@ -14,7 +14,7 @@ header, footer {
 ul {
     list-style-type: square;
 }
-li:nth-child(2n-1){
+li:nth-child(2n-1) {
     background-color: cornflowerblue;
 }
 a:link, a:visited {
