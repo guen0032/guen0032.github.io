@@ -6,7 +6,7 @@ header h1, footer {
     background-color: grey;
 }
 .site-title {
-    color:coral;
+    color: coral;
 }
 #my-image {
     box-shadow: 0px 0px 2px 1px black;
@@ -15,10 +15,14 @@ ul {
     list-style-type: square;
 }
 li:nth-child(2n-1){
-    background-color:cornflowerblue;
+    background-color: cornflowerblue;
 }
-a:link, a:active, a:visited {
+a:link, a:visited {
     text-decoration: none;
-    background-color:darkseagreen;
+    background-color: darkseagreen;
     border: cyan 4px solid;
+}
+a:hover, a:active {
+    background-color: darkorchid;
+    color: deeppink;
 }
