@@ -18,11 +18,14 @@ li:nth-child(2n-1){
     background-color: cornflowerblue;
 }
 a:link, a:visited {
+    color: coral;
     text-decoration: none;
-    background-color: darkseagreen;
-    border: cyan 4px solid;
+    background-color: grey;
+    border: coral 3px solid;
 }
-a:hover, a:active {
-    background-color: darkorchid;
-    color: deeppink;
+a:hover {
+   color: black;
+   background-color: cornflowerblue;
+   border: black 3px solid;
 }
+
