@@ -4,41 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/styles.css" rel="stylesheet">
     <title>Three Star Media</title>
 </head>
-<body class="container">
-        <header>
-            <img id="logo" src="images/logo.png" alt="logo">
-            <nav class="navbar">    
-                <a href="#">Home</a>
-                <a href="#">About Us</a>
-                <a href="#">Services</a>
-                <a href="#">Team</a>
-                <a href="#">Home</a>
-                <form action="index.html" method="post">
-                    <input type="text" id="search" name="search" required>
-                    <button type="submit">Search</button>
-                </form>
-            </nav>
-        </header>  
-            <div class="welcome">
-                <h1> Welcome to Three Star Media </h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Magnam rerum voluptas nesciunt quam nostrum similique nihil laboriosam provident neque,
-                    recusandae voluptate temporibus! Animi accusamus id fuga voluptatibus facilis iusto consquuntur! 
-                </p>
-                <a href="#">Connect with us</a>
-                <img id="banner" src="images/main-banner.jpg" alt="main-banner">
+    <body>
+    <!-- Site Header / Navigation Bar -->
+            <div class="container">
+                <div class="navbar">
+                    <img id="logo" src="images/logo.png" alt="logo">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Home</a></li>
+                        </ul>
+                    </nav>
+                    <form action="index.html" method="post">
+                        <input id="search" type="text" name="search" placeholder="Search..." required>
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+                <img id="main-banner" src="images/main-banner.jpg" alt="main-banner">
+                <header class="welcome">
+                    <h1>Welcome to Three Star Media</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit. Magnam rerum voluptas nesciunt quam nostrum similique nihil laboriosam provident neque,
+                        recusandae voluptate temporibus! Animi accusamus id fuga voluptatibus facilis iusto consquuntur!    
+                    </p>
+                    <a href="#">Connect with us</a>
+                </header>   
             </div>
 
-            <div class="About Us">
+            <article class="about-container">
                 <h2>About Us</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent viverra vitae justo sed posuere. Quisque sit amet sagittis tellus, ac ornare ex. Maecenas pulvinar posuere purus, sed iaculis tellus euismod eu. Morbi vel nunc suscipit, rhoncus elit in, rhoncus eros. Nullam molestie nisl eros, sit amet aliquet velit vehicula nec. Vestibulum blandit sapien at vestibulum ultricies. Donec malesuada lacus sit amet quam ornare suscipit in vel erat. Fusce vel odio eu dui feugiat lobortis. Praesent sagittis ante ac maximus placerat. Nunc vel condimentum nulla.</p>
                 <p>Nam tempus est ut fermentum egestas. Duis quis nisl at velit consequat tincidunt eu vel magna. Sed sapien quam, posuere a dolor sed, pellentesque iaculis tortor. Suspendisse aliquam nisi erat. Vestibulum euismod, orci non mattis efficitur, metus mi porta lectus, vel interdum turpis ipsum vehicula lorem. Suspendisse quis mattis eros. Nullam tempor convallis turpis, sed imperdiet velit cursus in.</p>
                 <img src="images/about-us.jpg" alt="about-us">
-            </div>
+            </article>
 
-            <div class="Services">
+            <div class="services-container">
                 <h2> Our Services </h2>
                 
                 <article class="s1">
@@ -76,17 +82,72 @@
                     <a href="#">Print Plans</a>
                 </article>
             </div>
-
-            <div class="Vision">
+        <!-- Our Vision Section -->
+            <div class="vision-container">
                     <h3>Our Vision</h3>
                     <img id="visions" src="images/vision.jpg" alt="vision">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus in nunc eget congue. Nam a velit cursus, porta ipsum at, ultricies turpis. Nullam tempor ut felis quis vulputate. Proin varius justo risus, in rhoncus metus sagittis sed. Proin imperdiet augue ex, et egestas justo ornare in</p>
                     <a href="#">Learn More</a>
             </div>
+        <!-- Our Team Article -->
+            <article class="team-container">
+                <h2>Our Team</h2>
+                    <div class="team-members">
+                        <span>
+                            <img id="john" src="images/john.jpg" alt="John">
+                        </span>
 
-        </body>
+                        <span>
+                            <h3>John Doe</h3>
+                            <h4>CEO and Co-owner</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc finibus semper turpis, convallis rutrum libero scelerisque at. Phasellus eu suscipit nisi, accumsan condimentum lacus. Morbi tincidunt est eu velit egestas luctus. Curabitur quis venenatis augue. Suspendisse et venenatis nisl, non tempus mauris. Ut tempus magna nec arcu rhoncus, eget luctus tellus mattis.</p>
+                        </span>
+
+                        <span>
+                            <img id="bob" src="images/bob.jpg" alt="Bob">
+                        </span>
+
+                        <span>
+                            <h3>Bob Rite</h3>
+                            <h4>CFO and Co-owner</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc finibus semper turpis, convallis rutrum libero scelerisque at. Phasellus eu suscipit nisi, accumsan condimentum lacus. Morbi tincidunt est eu velit egestas luctus. Curabitur quis venenatis augue. Suspendisse et venenatis nisl, non tempus mauris. Ut tempus magna nec arcu rhoncus, eget luctus tellus mattis.</p>
+                        </span>
+                    </div>        
+            </article>
+        <!-- Contact Section -->
+            <section class="contact-container">
+                <h2>Contact Us</h2>
+                <div class>
+                    <span>
+                        <h3>Send Us a Message</h3>
+
+                        <form action="index.html" method="post">
+                            <label for="fullname">Full Name</label>
+                            <input id="fullname">
+                        </form>
+
+                        <form action="index.html" method="post">
+                            <label for="email">Email</label>
+                            <input id="email">
+                        </form>
+
+                        <form action="index.html" method="post">
+                            <label for="message">Message</label>
+                            <textarea id="message"></textarea>
+                        </form>
+                        <button type="submit">Send</button>
+                    </span>
+
+                    <span>
+                    <h2>Location</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2804.047151264883!2d-75.76292608446396!3d45.34786044921978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce07afd713c56d%3A0xb73cbaee6d47a756!2s1385%20Woodroffe%20Ave%2C%20Nepean%2C%20ON%20K2G%201V8!5e0!3m2!1sen!2sca!4v1638406395503!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </span>
+                </div>    
+            </section>
+        <!-- Footer -->
         <footer>
             <p>&copy; Copyright Three Star Media, 2020</p>
             <p>All images are taken from <u>Unsplash</u> </p>
         </footer> 
+    </body>
 </html>
