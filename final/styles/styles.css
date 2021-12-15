@@ -1,0 +1,307 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/****************************************
+        Defaults - Mobile First  
+*****************************************/
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 3em;
+    padding-bottom: 1em;
+}
+
+h2 {
+    font-size: 2.5em;
+    padding: 0.5em;
+}
+
+h3 {
+    font-size: 2em;
+    padding: 0.5em;
+}
+
+h4 {
+    font-size: 1.5em;
+    padding: 0.5em;
+}
+
+table {
+    width: 80%;
+}
+
+th {
+    background-color: #ffe6ac;
+}
+
+table, th, td {
+    text-align: center;
+    border: 1px solid black;
+    margin: 2em;
+  }
+
+footer {
+    background-color: #222;
+    color: #c78c06;
+    padding: 2em 1em 1em 1em;
+}
+
+footer p{
+    margin-bottom: 1em;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/********** navigation **********/
+.navbar{
+    background-color: #222;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logo{
+    background-color: #c78c06;
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+li:first-child {
+    background-color: #c78c06;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 25px;
+}
+
+ul {
+    display: flex;
+    flex-flow: column;
+}
+
+li a {
+    display: block;
+    color: #c78c06;
+}
+
+li {
+    padding: 25px;  
+    text-align: center;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+
+
+/********** Welcome Header **********/
+
+.welcome {
+    position: relative;
+}
+
+.welcome img {
+    width: 100%;
+    height: auto;
+}
+
+.text-block {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: left;
+    color: white;
+    margin-top: 10em;
+    padding-left: 10px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.welcome a {
+    color: #222;
+    background-color: #c78c06;
+    padding: 14px 25px;
+    text-align: center;
+    display: inline-block;
+}
+
+/*h1 {
+    padding-bottom: 5px;
+    position:absolute;
+    width:100%;
+    top:30%;
+    text-align: left;
+    font-size:5rem;
+    color:white;
+}
+
+header p {
+    position:absolute;
+    width:100%;
+    top:60%;
+    text-align: left;
+    font-size:1.5rem;
+    color:white; 
+}
+*/
+
+/********** About Us **********/
+
+.about {
+    background-color: #ffe6ac;
+    padding: 1.0em;
+}
+
+.about img { 
+    width: 100%;
+    height: 100%;
+}
+
+.about p {
+    padding: 1em;
+}
+
+
+/********** Services **********/
+.services img{
+    width: 100%;
+}
+
+.services p {
+    padding: 1em;
+}
+
+.grid-container section {
+    background-color: #ffe6ac;
+    margin: 2em;
+    padding-bottom: 1.5em;
+}
+
+.services a {
+    background-color: #222;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    display: inline-block;
+}
+
+/********** Our Vision **********/
+
+.vision {
+    position: relative;
+    
+}
+
+.vision img {
+    height: 100%;
+    width: 100%;
+}
+
+.vision-text {
+    position: absolute;
+    text-align: left;
+    color: white;
+    margin-top: 10em;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.vision a {
+    border: 1px solid #ffe6ac;
+    background-color: #222;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    display: inline-block;
+}
+
+/********** Our Team **********/
+.team {
+    padding: 2em;
+}
+
+.team img {
+    width: 100%;
+}
+
+.team-grid div:nth-child(2n){
+    background-color: #ffe6ac;
+}
+
+.team-grid p {
+    padding: 0.5em;
+    padding-bottom: 2em;
+    margin-bottom: 1em;
+}
+
+/********** Contact **********/
+.contact {
+    padding: 2em;
+}
+
+.contact textarea{
+    height: 100px;
+}
+
+.contact label, .contact input, .contact textarea{
+    display: inline-block;
+    width:100%;
+    margin-right: 2em;
+}
+
+.contact-grid {
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 760) {
+    
+}
+

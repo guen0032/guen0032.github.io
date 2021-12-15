@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/icons.css" rel="stylesheet">
     <link href="styles/styles.css" rel="stylesheet">
     <title>Three Star Media</title>
 </head>
@@ -12,28 +13,35 @@
             <!-- Site Header / Navigation Bar -->
             <header>
                 <div class="navbar">
-                    <img id="logo" src="images/logo.png" alt="logo">
                     <nav>
+                        <div class="logo">
+                            <img id="logo" src="images/logo.png" alt="logo">
+                        </div>
                         <ul>
                             <li><a href="#">Home</a></li>
                             <li><a href="#">About Us</a></li>
                             <li><a href="#">Services</a></li>
                             <li><a href="#">Team</a></li>
                             <li><a href="#">Home</a></li>
+                        <div class="search">
+                            <form action="index.html" method="post">
+                                <input id="search" type="text" name="search" placeholder="Search..." required>
+                                <button type="submit">Search</button>
+                            </form>
+                        </div>
                         </ul>
                     </nav>
-                        <form action="index.html" method="post">
-                            <input id="search" type="text" name="search" placeholder="Search..." required>
-                            <button type="submit">Search</button>
-                        </form>
+                        
                 </div>
                 <section class="welcome">
+                    <div class="text-block">
                     <h1>Welcome to Three Star Media</h1>
                     <p>
                     Lorem ipsum dolor sit amet consectetur adipiscing elit. Magnam rerum voluptas nesciunt quam nostrum similique nihil laboriosam provident neque,
                     recusandae voluptate temporibus! Animi accusamus id fuga voluptatibus facilis iusto consquuntur!    
                     </p>
                     <a href="#">Connect with us</a>
+                    </div>
                     <img id="main-banner" src="images/main-banner.jpg" alt="main-banner">
                 </section>
             </header>  
@@ -42,10 +50,11 @@
             <main>
             <!-- About Us -->
             <div class="about">
+                <img src="images/about-us.jpg" alt="about-us">
                 <h2>About Us</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent viverra vitae justo sed posuere. Quisque sit amet sagittis tellus, ac ornare ex. Maecenas pulvinar posuere purus, sed iaculis tellus euismod eu. Morbi vel nunc suscipit, rhoncus elit in, rhoncus eros. Nullam molestie nisl eros, sit amet aliquet velit vehicula nec. Vestibulum blandit sapien at vestibulum ultricies. Donec malesuada lacus sit amet quam ornare suscipit in vel erat. Fusce vel odio eu dui feugiat lobortis. Praesent sagittis ante ac maximus placerat. Nunc vel condimentum nulla.</p>
                 <p>Nam tempus est ut fermentum egestas. Duis quis nisl at velit consequat tincidunt eu vel magna. Sed sapien quam, posuere a dolor sed, pellentesque iaculis tortor. Suspendisse aliquam nisi erat. Vestibulum euismod, orci non mattis efficitur, metus mi porta lectus, vel interdum turpis ipsum vehicula lorem. Suspendisse quis mattis eros. Nullam tempor convallis turpis, sed imperdiet velit cursus in.</p>
-                <img src="images/about-us.jpg" alt="about-us">
+
             </div>
 
             <!-- Services -->
@@ -53,36 +62,36 @@
                 <h2> Our Services </h2>
                 <div class="grid-container">
                     <section>
-                        <h3>Digital Transformation</h3>
                         <img id="digital" src="images/digital.jpg" alt="digital">
+                        <h3>Digital Transformation</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus in nunc eget congue. Nam a velit cursus, porta ipsum at, ultricies turpis. Nullam tempor ut felis quis vulputate. Proin varius justo risus, in rhoncus metus sagittis sed. Proin imperdiet augue ex, et egestas justo ornare in. Nam sed elit quis magna euismod varius. Suspendisse potenti. Praesent mollis, lorem vitae fringilla blandit, turpis sem ultrices tortor, eget cursus nibh ex vel magna. Praesent rutrum imperdiet dictum. Integer sodales nulla id justo consectetur laoreet. Sed pulvinar lorem ut felis gravida molestie</p>
                         <a href="#">Digital Plans</a>
                     </section>
 
                     <section>
-                        <h3>Marketing</h3>
                         <img id="marketing" src="images/marketing.jpg" alt="marketing">
+                        <h3>Marketing</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus in nunc eget congue. Nam a velit cursus, porta ipsum at, ultricies turpis. Nullam tempor ut felis quis vulputate. Proin varius justo risus, in rhoncus metus sagittis sed. Proin imperdiet augue ex, et egestas justo ornare in. Nam sed elit quis magna euismod varius. Suspendisse potenti. Praesent mollis, lorem vitae fringilla blandit, turpis sem ultrices tortor, eget cursus nibh ex vel magna. Praesent rutrum imperdiet dictum. Integer sodales nulla id justo consectetur laoreet. Sed pulvinar lorem ut felis gravida molestie.</p>
                         <a href="#">Marketing Plans</a>
                     </section>
 
                     <section>
-                        <h3>Video Production</h3>
                         <img id="video" src="images/video.jpg" alt="video">
+                        <h3>Video Production</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus in nunc eget congue. Nam a velit cursus, porta ipsum at, ultricies turpis. Nullam tempor ut felis quis vulputate. Proin varius justo risus, in rhoncus metus sagittis sed. Proin imperdiet augue ex, et egestas justo ornare in. Nam sed elit quis magna euismod varius. Suspendisse potenti. Praesent mollis, lorem vitae fringilla blandit, turpis sem ultrices tortor, eget cursus nibh ex vel magna. Praesent rutrum imperdiet dictum. Integer sodales nulla id justo consectetur laoreet. Sed pulvinar lorem ut felis gravida molestie.</p>
                         <a href="#">Video Plans</a>
                     </section>
 
                     <section>
-                        <h3>Web Development</h3>
                         <img id="web" src="images/web.jpg" alt="web">
+                        <h3>Web Development</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus in nunc eget congue. Nam a velit cursus, porta ipsum at, ultricies turpis. Nullam tempor ut felis quis vulputate. Proin varius justo risus, in rhoncus metus sagittis sed. Proin imperdiet augue ex, et egestas justo ornare in. Nam sed elit quis magna euismod varius. Suspendisse potenti. Praesent mollis, lorem vitae fringilla blandit, turpis sem ultrices tortor, eget cursus nibh ex vel magna. Praesent rutrum imperdiet dictum. Integer sodales nulla id justo consectetur laoreet. Sed pulvinar lorem ut felis gravida molestie.</p>
                         <a href="#">Web Plans</a>
                     </section>
 
                     <section>
-                        <h3>Print</h3>
                         <img id="print" src="images/print.jpg" alt="print">
+                        <h3>Print</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus in nunc eget congue. Nam a velit cursus, porta ipsum at, ultricies turpis. Nullam tempor ut felis quis vulputate. Proin varius justo risus, in rhoncus metus sagittis sed. Proin imperdiet augue ex, et egestas justo ornare in. Nam sed elit quis magna euismod varius. Suspendisse potenti. Praesent mollis, lorem vitae fringilla blandit, turpis sem ultrices tortor, eget cursus nibh ex vel magna. Praesent rutrum imperdiet dictum. Integer sodales nulla id justo consectetur laoreet. Sed pulvinar lorem ut felis gravida molestie.</p>
                         <a href="#">Print Plans</a>
                     </section>
@@ -91,9 +100,11 @@
 
             <!-- Our Vision Section -->
             <div class="vision">
+                    <div class="vision-text">
                     <h3>Our Vision</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus in nunc eget congue. Nam a velit cursus, porta ipsum at, ultricies turpis. Nullam tempor ut felis quis vulputate. Proin varius justo risus, in rhoncus metus sagittis sed. Proin imperdiet augue ex, et egestas justo ornare in</p>
                     <a href="#">Learn More</a>
+                    </div>
                     <img id="vision" src="images/vision.jpg" alt="vision">
             </div>
 
@@ -105,7 +116,7 @@
                             <img id="john" src="images/john.jpg" alt="John">
                         </div>
 
-                        <div>
+                        <div class="john">
                             <h3>John Doe</h3>
                             <h4>CEO and Co-owner</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc finibus semper turpis, convallis rutrum libero scelerisque at. Phasellus eu suscipit nisi, accumsan condimentum lacus. Morbi tincidunt est eu velit egestas luctus. Curabitur quis venenatis augue. Suspendisse et venenatis nisl, non tempus mauris. Ut tempus magna nec arcu rhoncus, eget luctus tellus mattis.</p>
@@ -115,7 +126,7 @@
                             <img id="bob" src="images/bob.jpg" alt="Bob">
                         </div>
 
-                        <div>
+                        <div class="bob">
                             <h3>Bob Rite</h3>
                             <h4>CFO and Co-owner</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc finibus semper turpis, convallis rutrum libero scelerisque at. Phasellus eu suscipit nisi, accumsan condimentum lacus. Morbi tincidunt est eu velit egestas luctus. Curabitur quis venenatis augue. Suspendisse et venenatis nisl, non tempus mauris. Ut tempus magna nec arcu rhoncus, eget luctus tellus mattis.</p>
