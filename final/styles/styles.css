@@ -50,6 +50,13 @@ table {
 /****************************************
         Defaults - Mobile First  
 *****************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
 a {
     text-decoration: none;
 }
@@ -100,7 +107,8 @@ footer p{
 
 .container {
     margin: 0 auto;
-    max-width: 1200px;
+    width: 100vh;
+    height: 100vw;
 }
 
 /********** navigation **********/
@@ -141,11 +149,32 @@ li {
     flex-basis: 0;
 }
 
+.search {
+    margin: auto;
+    width: 25%;
+    padding: 2em;
+}
 
+.search button {
+    background-color: #222;
+    border: 1px solid #c78c06;
+}
 
+.icon-zoom {
+    color: #c78c06;
+}
+
+.icon-right {
+    padding: 0.5em;
+}
+
+#home {
+    color: #222;
+}
 /********** Welcome Header **********/
 
 .welcome {
+    display: flex;
     position: relative;
 }
 
@@ -228,6 +257,7 @@ header p {
 .services a {
     background-color: #222;
     color: white;
+    margin-left: 1em;
     padding: 14px 25px;
     text-align: center;
     display: inline-block;
@@ -282,6 +312,9 @@ header p {
     margin-bottom: 1em;
 }
 
+.team h4 {
+    border-bottom: 2px solid #c78c06;
+}
 /********** Contact **********/
 .contact {
     padding: 2em;
@@ -301,7 +334,42 @@ header p {
     margin: 0 auto;
 }
 
-@media screen and (min-width: 760) {
-    
+.contact button {
+    color: #c78c06;
+    background-color: #222;
+    border: 1px solid #c78c06;
+}
+
+/*******************************
+            Desktop  
+*********************************/
+
+@media screen and (min-width: 760px) {
+    .container {
+        width: 100vw;
+        max-width: 1200px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about img {
+        width: 50%;
+        float: left;
+    }
+
+    .team-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat (2, 1fr);
+    }
+
+    .team img {
+        height: 100%;
+        width: 100%;
+    }
+
 }
 
