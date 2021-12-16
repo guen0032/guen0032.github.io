@@ -350,6 +350,10 @@ header p {
         max-width: 1200px;
     }
 
+    h1 {
+        font-size: 4em;
+    }
+
     .grid-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -358,6 +362,10 @@ header p {
     .about img {
         width: 50%;
         float: left;
+    }
+
+    .team h4 {
+        border-bottom: none;
     }
 
     .team-grid {
@@ -371,5 +379,10 @@ header p {
         width: 100%;
     }
 
+    .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 5%;
+    }
 }
 
